@@ -176,29 +176,38 @@
                     </button>
                     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav ml-auto mr-auto">
-                            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="index.html" th:text="#{main}">Home</a>
+                            </li>
                             <li class="nav-item submenu dropdown">
-                                <a href="index.html#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
-                                   aria-haspopup="true" aria-expanded="false">Shop</a>
+                                <a href="index.html#" class="nav-link dropdown-toggle" data-toggle="dropdown"
+                                   role="button"
+                                   aria-haspopup="true" aria-expanded="false" th:text="#{shop}">Shop</a>
                                 <ul class="dropdown-menu">
-                                    <li class="nav-item"><a class="nav-link" href="category.html">Shop Category</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="single-product.html">Product Details</a>
+                                    <li class="nav-item"><a class="nav-link" href="category.html"th:text="#{category}">Shop Category</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="single-product.html"th:text="#{product}">Product Details</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="checkout.html"th:text="#{check}">Product Checkout</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="confirmation.html"th:text="#{conf}">Confirmation</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="cart.html"th:text="#{cart}">Shopping Cart</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item submenu dropdown">
+                                <a href="index.html#" class="nav-link dropdown-toggle" data-toggle="dropdown"
+                                   role="button"
+                                   aria-haspopup="true" aria-expanded="false" th:text="#{page}">Pages</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link" href="login.html"th:text="#{log}">Login</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="register.html"th:text="#{register}">Register</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="tracking-order.html"th:text="#{track}">Tracking</a>
                                     </li>
-                                    <li class="nav-item"><a class="nav-link" href="checkout.html">Product Checkout</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="confirmation.html">Confirmation</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="cart.html">Shopping Cart</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item submenu dropdown">
-                                <a href="index.html#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
-                                   aria-haspopup="true" aria-expanded="false">Pages</a>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="tracking-order.html">Tracking</a></li>
-                                </ul>
+                            <li class="nav-item"><a class="nav-link" href="contact.html"th:text="#{contact}">Contact</a></li>
+
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="?lang=hy">Հայ</a> | <a href="?lang=ru">Рус</a> | <a href="?lang=en">Eng</a> |
                             </li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -215,64 +224,32 @@
                 <div class="row section_gap">
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="single-footer-widget tp_widgets">
-                            <h4 class="footer_title large_title">Our Mission</h4>
+                            <h4 class="footer_title large_title" th:text="#{Mission}">Our Mission</h4>
                             <p>
                                 So seed seed green that winged cattle in. Gathering thing made fly you're no
                                 divided deep moved us lan Gathering thing us land years living.
                             </p>
                             <p>
-                                So seed seed green that winged cattle in. Gathering thing made fly you're no divided deep
+                                So seed seed green that winged cattle in. Gathering thing made fly you're no divided
+                                deep
                                 moved
                             </p>
                         </div>
                     </div>
                     <div class="offset-lg-1 col-lg-2 col-md-6 col-sm-6">
                         <div class="single-footer-widget tp_widgets">
-                            <h4 class="footer_title">Quick Links</h4>
+                            <h4 class="footer_title" th:text="#{quick}">Quick Links</h4>
                             <ul class="list">
-                                <li><a href="index.html#">Home</a></li>
-                                <li><a href="index.html#">Shop</a></li>
-                                <li><a href="index.html#">Blog</a></li>
-                                <li><a href="index.html#">Product</a></li>
-                                <li><a href="index.html#">Brand</a></li>
-                                <li><a href="index.html#">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-6 col-sm-6">
-                        <div class="single-footer-widget instafeed">
-                            <h4 class="footer_title">Gallery</h4>
-                            <ul class="list instafeed d-flex flex-wrap">
-                                <li><img
-                                        src="/theme/aroma/img/gallery/xr1.jpg.pagespeed.ic.rF_OJYM0Ln.jpg"
-                                        alt="" data-pagespeed-url-hash="2969363667"
-                                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></li>
-                                <li><img
-                                        src="/img/gallery/xr2.jpg.pagespeed.ic.KLvLNL5NsG.jpg"
-                                        alt="" data-pagespeed-url-hash="3263863588"
-                                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></li>
-                                <li><img
-                                        src="/img/gallery/xr3.jpg.pagespeed.ic.ZgyfmOIIC4.jpg"
-                                        alt="" data-pagespeed-url-hash="3558363509"
-                                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></li>
-                                <li><img
-                                        src="/img/gallery/xr5.jpg.pagespeed.ic.a7Nan5PLGX.jpg"
-                                        alt="" data-pagespeed-url-hash="4147363351"
-                                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></li>
-                                <li><img
-                                        src="/img/gallery/xr7.jpg.pagespeed.ic.2Fua-tyVAq.jpg"
-                                        alt="" data-pagespeed-url-hash="441395897"
-                                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></li>
-                                <li><img
-                                        src="/img/gallery/xr8.jpg.pagespeed.ic.4eYdalrllV.jpg"
-                                        alt="" data-pagespeed-url-hash="735895818"
-                                        onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></li>
+                                <li><a href="index.html#"th:text="#{main}">Home</a></li>
+                                <li><a href="index.html#"th:text="#{shop}">Shop</a></li>
+                                <li><a href="index.html#"th:text="#{product}">Product</a></li>
+                                <li><a href="index.html#"th:text="#{contact}">Contact</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="offset-lg-1 col-lg-3 col-md-6 col-sm-6">
                         <div class="single-footer-widget tp_widgets">
-                            <h4 class="footer_title">Contact Us</h4>
+                            <h4 class="footer_title"th:text="#{contact}">Contact Us</h4>
                             <div class="ml-40">
                                 <p class="sm-head">
                                     <span class="fa fa-location-arrow"></span>
@@ -311,7 +288,8 @@
                         Copyright &copy;<script data-cfasync="false"
                                                 src="../../../../../../Desktop/project/preview.colorlib.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
                         <script>document.write(new Date().getFullYear());</script>
-                        All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by
+                        All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i>
+                        by
                         <a href="https://colorlib.com" target="_blank">Colorlib</a>
                     </p>
                 </div>
