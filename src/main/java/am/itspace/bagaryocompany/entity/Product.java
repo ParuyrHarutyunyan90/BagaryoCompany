@@ -24,13 +24,11 @@ public class Product {
     private String components;
     private int count;
     private double rating;
+    private int ratingCount;
     private String description;
     private Date dateSince;
     private int minCount;
-    private int ratingCount;
     @ManyToOne
     private Category category;
-
-
 
 }
