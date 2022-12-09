@@ -14,6 +14,7 @@ import java.util.List;
 public class CategoryController {
 
     private final CategoryService categoryService;
+
     @GetMapping("/categories")
     private String categoryPage(ModelMap modelMap) {
         List<Category> categories = categoryService.findAll();
