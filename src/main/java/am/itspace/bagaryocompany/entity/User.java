@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.UUID;
 
 @Data
 @NoArgsConstructor
@@ -23,6 +24,10 @@ public class User {
     private String password;
     private String phoneNumber;
     private String country;
+    private boolean isEnable;
     @Enumerated(value = EnumType.STRING)
     private Role role;
+    private String verifyToken;
+
+
 }

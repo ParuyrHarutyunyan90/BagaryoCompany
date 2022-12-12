@@ -64,6 +64,7 @@
             <column name="password" type="VARCHAR(255)">
                 <constraints nullable="false"/>
             </column>
+
             <column name="role" type="ENUM('MANAGER','USER')" defaultValue="USER">
                 <constraints nullable="false"/>
             </column>
@@ -89,5 +90,19 @@
             </column>
         </createTable>
     </changeSet>
-
+    <changeSet id="is_enable" author="armpash">
+        <addColumn tableName="user">
+            <column name="is_enable" type="INT(1)" defaultValue="0"/>
+        </addColumn>
+    </changeSet>
+    <changeSet id="addVerifyTokenToUser" author="armpash">
+        <addColumn tableName="user">
+            <column type="VARCHAR(255)" name="verify_token"/>
+        </addColumn>
+    </changeSet>
+<changeSet id="addAmountToOrderProduct" author="armpash">
+    <addColumn tableName="order">
+        <column name="amount" type="DOUBLE"/>
+    </addColumn>
+</changeSet>
 </databaseChangeLog>
