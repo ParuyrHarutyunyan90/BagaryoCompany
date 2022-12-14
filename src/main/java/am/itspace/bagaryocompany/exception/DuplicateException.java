@@ -1,8 +1,6 @@
 package am.itspace.bagaryocompany.exception;
 
-public class DuplicateException extends Exception{
-    public DuplicateException() {
-    }
+public class DuplicateException extends RuntimeException{
 
     public DuplicateException(String message) {
         super(message);
