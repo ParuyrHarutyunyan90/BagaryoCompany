@@ -3,16 +3,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.0.0</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <groupId>am.itspace</groupId>
+        <artifactId>BagaryoCompany</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <groupId>am.itspace</groupId>
     <artifactId>bagario-company-common</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>bagario-company-common</name>
-    <description>bagario-company-common</description>
     <properties>
         <java.version>17</java.version>
     </properties>
@@ -28,14 +25,5 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>
