@@ -1,8 +1,8 @@
-package am.itspace.bagaryocompany.controller;
+package am.itspace.bagariocompanyweb.controller;
 
 
-import am.itspace.bagaryocompany.entity.User;
-import am.itspace.bagaryocompany.security.CurrentUser;
+import am.itspace.bagariocompanycommon.entity.User;
+import am.itspace.bagariocompanycommon.security.CurrentUser;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ModelAttribute;

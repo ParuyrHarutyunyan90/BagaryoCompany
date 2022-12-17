@@ -1,7 +1,7 @@
-package am.itspace.bagaryocompany.security;
+package am.itspace.bagariocompanycommon.security;
 
-import am.itspace.bagaryocompany.entity.User;
-import am.itspace.bagaryocompany.repository.UserRepository;
+import am.itspace.bagariocompanycommon.entity.User;
+import am.itspace.bagariocompanycommon.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

@@ -1,7 +1,8 @@
-package am.itspace.bagaryocompany.controller;
+package am.itspace.bagariocompanyweb.controller;
 
-import am.itspace.bagaryocompany.entity.Category;
-import am.itspace.bagaryocompany.service.CategoryService;
+import am.itspace.bagariocompanycommon.entity.Category;
+import am.itspace.bagariocompanycommon.service.CategoryService;
+
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;

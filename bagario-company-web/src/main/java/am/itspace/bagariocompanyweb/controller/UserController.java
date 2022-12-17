@@ -1,12 +1,13 @@
-package am.itspace.bagaryocompany.controller;
+package am.itspace.bagariocompanyweb.controller;
 
-import am.itspace.bagaryocompany.entity.Order;
-import am.itspace.bagaryocompany.entity.User;
-import am.itspace.bagaryocompany.exception.DuplicateException;
-import am.itspace.bagaryocompany.security.CurrentUser;
-import am.itspace.bagaryocompany.service.OrderService;
-import am.itspace.bagaryocompany.service.UserService;
+
+import am.itspace.bagariocompanycommon.entity.Order;
+import am.itspace.bagariocompanycommon.entity.User;
+import am.itspace.bagariocompanycommon.security.CurrentUser;
+import am.itspace.bagariocompanycommon.service.OrderService;
+import am.itspace.bagariocompanycommon.service.UserService;
 import lombok.RequiredArgsConstructor;
+import lombok.SneakyThrows;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -15,8 +16,8 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import javax.mail.MessagingException;
 import java.util.List;
+
 
 @Controller
 @RequiredArgsConstructor
@@ -38,7 +39,8 @@ public class UserController {
     }
 
     @PostMapping("/register")
-    public String register(@ModelAttribute User user) throws DuplicateException, MessagingException {
+    @SneakyThrows
+    public String register(@ModelAttribute User user) {
         userService.save(user);
         return "redirect:/";
     }

@@ -1,6 +1,6 @@
-package am.itspace.bagaryocompany.repository;
+package am.itspace.bagariocompanycommon.repository;
 
-import am.itspace.bagaryocompany.entity.Category;
+import am.itspace.bagariocompanycommon.entity.Category;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface CategoryRepository extends JpaRepository<Category, Integer> {

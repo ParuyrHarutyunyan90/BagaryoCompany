@@ -1,7 +1,7 @@
-package am.itspace.bagaryocompany.repository;
+package am.itspace.bagariocompanycommon.repository;
 
-import am.itspace.bagaryocompany.entity.Order;
-import am.itspace.bagaryocompany.entity.User;
+import am.itspace.bagariocompanycommon.entity.Order;
+import am.itspace.bagariocompanycommon.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

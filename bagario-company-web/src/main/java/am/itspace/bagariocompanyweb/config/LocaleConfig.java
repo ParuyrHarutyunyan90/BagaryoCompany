@@ -1,4 +1,4 @@
-package am.itspace.bagaryocompany.config;
+package am.itspace.bagariocompanyweb.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

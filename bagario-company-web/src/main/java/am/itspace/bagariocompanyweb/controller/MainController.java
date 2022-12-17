@@ -1,19 +1,17 @@
-package am.itspace.bagaryocompany.controller;
+package am.itspace.bagariocompanyweb.controller;
 
-import am.itspace.bagaryocompany.entity.Product;
-import am.itspace.bagaryocompany.entity.Role;
-import am.itspace.bagaryocompany.entity.User;
-import am.itspace.bagaryocompany.exception.DuplicateException;
-import am.itspace.bagaryocompany.security.CurrentUser;
-import am.itspace.bagaryocompany.service.ProductService;
-import am.itspace.bagaryocompany.service.UserService;
+
+import am.itspace.bagariocompanycommon.entity.Product;
+import am.itspace.bagariocompanycommon.entity.Role;
+import am.itspace.bagariocompanycommon.entity.User;
+import am.itspace.bagariocompanycommon.security.CurrentUser;
+import am.itspace.bagariocompanycommon.service.ProductService;
+import am.itspace.bagariocompanycommon.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.List;
 

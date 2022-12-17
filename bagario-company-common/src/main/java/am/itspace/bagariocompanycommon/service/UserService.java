@@ -1,9 +1,9 @@
-package am.itspace.bagaryocompany.service;
+package am.itspace.bagariocompanycommon.service;
 
-import am.itspace.bagaryocompany.entity.Role;
-import am.itspace.bagaryocompany.entity.User;
+import am.itspace.bagariocompanycommon.entity.Role;
+import am.itspace.bagariocompanycommon.entity.User;
+import am.itspace.bagariocompanycommon.repository.UserRepository;
 import am.itspace.bagaryocompany.exception.DuplicateException;
-import am.itspace.bagaryocompany.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;

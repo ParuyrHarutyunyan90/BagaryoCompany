@@ -1,6 +1,6 @@
-package am.itspace.bagaryocompany.repository;
+package am.itspace.bagariocompanycommon.repository;
 
-import am.itspace.bagaryocompany.entity.Product;
+import am.itspace.bagariocompanycommon.entity.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

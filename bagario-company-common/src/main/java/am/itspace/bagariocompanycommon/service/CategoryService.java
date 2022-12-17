@@ -1,8 +1,8 @@
-package am.itspace.bagaryocompany.service;
+package am.itspace.bagariocompanycommon.service;
 
-import am.itspace.bagaryocompany.entity.Category;
-import am.itspace.bagaryocompany.repository.CategoryRepository;
-import am.itspace.bagaryocompany.repository.ProductRepository;
+import am.itspace.bagariocompanycommon.entity.Category;
+import am.itspace.bagariocompanycommon.repository.CategoryRepository;
+import am.itspace.bagariocompanycommon.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

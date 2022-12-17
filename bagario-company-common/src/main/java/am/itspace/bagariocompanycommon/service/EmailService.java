@@ -1,4 +1,4 @@
-package am.itspace.bagaryocompany.service;
+package am.itspace.bagariocompanycommon.service;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.mail.SimpleMailMessage;

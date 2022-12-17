@@ -1,6 +1,6 @@
-package am.itspace.bagaryocompany.security;
+package am.itspace.bagariocompanycommon.security;
 
-import am.itspace.bagaryocompany.entity.User;
+import am.itspace.bagariocompanycommon.entity.User;
 import org.springframework.security.core.authority.AuthorityUtils;
 
 public class CurrentUser extends org.springframework.security.core.userdetails.User {

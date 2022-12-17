@@ -7,7 +7,7 @@
    http://www.liquibase.org/xml/ns/dbchangelog
    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
 
-    <changeSet author="armpash" id="initdb">
+    <changeSet author="armpash" id="init">
         <createTable tableName="category">
             <column name="id" type="BIGINT" autoIncrement="true">
                 <constraints primaryKey="true"/>

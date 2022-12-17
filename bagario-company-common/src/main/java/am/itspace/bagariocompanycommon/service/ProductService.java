@@ -1,8 +1,9 @@
-package am.itspace.bagaryocompany.service;
+package am.itspace.bagariocompanycommon.service;
 
-import am.itspace.bagaryocompany.entity.Product;
-import am.itspace.bagaryocompany.repository.ProductRepository;
-import am.itspace.bagaryocompany.repository.UserRepository;
+import am.itspace.bagariocompanycommon.entity.Product;
+import am.itspace.bagariocompanycommon.repository.ProductRepository;
+
+import am.itspace.bagariocompanycommon.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -34,13 +35,6 @@ public class ProductService {
         return productRepository.findById(id);
 
     }
-//    public Product findById(int id) {
-//        log.info("Find by email user");
-//        return productRepository.findById(id).orElseThrow(() -> {
-//            log.error("User with email: {} not found", id);
-//            throw new ProductNotFoundException("User with email: ");
-//        });
-//    }
 
     public void removeById(int id) {
         productRepository.deleteById(id);

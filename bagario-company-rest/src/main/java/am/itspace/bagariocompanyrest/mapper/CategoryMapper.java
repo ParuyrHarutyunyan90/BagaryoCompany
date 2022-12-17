@@ -5,6 +5,7 @@ import am.itspace.bagariocompanyrest.dto.CreateCategoryDto;
 import am.itspace.bagariocompanyrest.model.Category;
 import org.mapstruct.Mapper;
 
+
 import java.util.List;
 
 @Mapper(componentModel = "spring")

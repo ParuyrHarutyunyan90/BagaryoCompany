@@ -6,7 +6,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.0.0</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath/>
     </parent>
     <groupId>am.itspace</groupId>
     <artifactId>bagario-company-web</artifactId>
@@ -21,6 +21,15 @@
             <groupId>am.itspace</groupId>
             <artifactId>bagario-company-common</artifactId>
             <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>2.4.5</version>
         </dependency>
     </dependencies>
 

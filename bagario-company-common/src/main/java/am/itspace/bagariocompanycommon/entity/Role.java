@@ -1,4 +1,4 @@
-package am.itspace.bagaryocompany.entity;
+package am.itspace.bagariocompanycommon.entity;
 
 public enum Role {
     USER,
