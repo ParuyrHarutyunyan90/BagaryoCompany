@@ -2,10 +2,12 @@ package am.itspace.bagariocompanyweb.controller;
 
 
 import am.itspace.bagariocompanycommon.entity.Order;
+import am.itspace.bagariocompanycommon.entity.Role;
 import am.itspace.bagariocompanycommon.entity.User;
 import am.itspace.bagariocompanycommon.security.CurrentUser;
 import am.itspace.bagariocompanycommon.service.OrderService;
 import am.itspace.bagariocompanycommon.service.UserService;
+import jakarta.mail.MessagingException;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
@@ -38,17 +40,22 @@ public class UserController {
         return "/register";
     }
 
-    @PostMapping("/register")
     @SneakyThrows
-    public String register(@ModelAttribute User user) {
+    @PostMapping("/register")
+    public String register(@ModelAttribute User user) throws am.itspace.bagaryocompany.exception.DuplicateException, MessagingException {
+        user.setRole(Role.USER);
         userService.save(user);
-        return "redirect:/";
+        return "redirect:/login";
+    }
+    @GetMapping("/login")
+    public String loginPage() {
+        return "login";
     }
     @GetMapping("/myOrders")
     public String myOrdersPage(@AuthenticationPrincipal CurrentUser currentUser, ModelMap modelMap){
         List<Order> myOrders = orderService.findAllByUser(currentUser.getUser());
         modelMap.addAttribute("myOrders", myOrders);
-        return "myOrders";
+        return "tracking-order";
     }
 
 }
