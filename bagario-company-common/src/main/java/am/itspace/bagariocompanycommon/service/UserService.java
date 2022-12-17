@@ -9,6 +9,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import javax.mail.MessagingException;
+import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
@@ -49,5 +50,8 @@ public class UserService {
         user.setEnable(true);
         user.setVerifyToken(null);
         userRepository.save(user);
+    }
+    public List<User> showAllUser() {
+        return userRepository.findAll();
     }
 }
